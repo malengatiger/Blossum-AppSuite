@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:id="@+id/SH_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_txtNumber"
+            android:text="00"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/xred_oval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtName"
+            style="@style/Title3TextStyleBlack"
+            android:text="Mac Address Name"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/SH_txtNumber"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_txtCountLabel"
+            android:text="Mac Address"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="16sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtMac"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_txtMajorLabel"
+            android:text="Major"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtMajor"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_txtMinorLabel"
+            android:text="Minor"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtMinor"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_layuuid"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/SH_lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_ulabel"
+            android:text="UUID"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtUUID"
+            android:text="UUID STRING HERE"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/SH_ulabel"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay5"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_layuuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_labelRSSI"
+            android:text="RSSI"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtRSSI"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/absa_red"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay6"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_labelPower"
+            android:text="Measured Power"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtPower"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/green"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/SH_txtRegistered"
+        android:text="Beacon Registered"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SH_lay6"
+        android:textColor="@color/green"
+        style="@style/Title2TextStyleBlue"
+        android:visibility="gone"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/SH_txtUnRegistered"
+        android:text="Beacon Not Registered"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SH_lay6"
+        android:textColor="@color/absa_red"
+        style="@style/Title2TextStyleBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

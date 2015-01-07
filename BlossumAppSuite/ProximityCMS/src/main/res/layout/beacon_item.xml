@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/SH_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SH_txtNumber"
+            android:text="00"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/xblue_oval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SH_txtName"
+            style="@style/Title3TextStyleBlack"
+            android:text="Beacon Name"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/SH_txtNumber"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/SH_txtCountLabel"
+            android:text="Mac Address"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/SH_txtMac"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/SH_lay3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/SH_txtMajorLabel"
+            android:text="Major"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/SH_txtMajor"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/SH_lay4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SH_lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/SH_txtMinorLabel"
+            android:text="Minor"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/SH_txtMinor"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SH_lay6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/SH_lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/SH_txtItemLabel"
+            android:text="Number of Data Items"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/SH_txtItemCount"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/opaque_red"
+            android:layout_marginRight="30dp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

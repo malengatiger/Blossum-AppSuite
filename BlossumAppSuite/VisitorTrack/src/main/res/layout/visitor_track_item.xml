@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/VI_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/VI_number"
+            android:text="00"
+            android:background="@drawable/xgreen_oval"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/VI_visitorName"
+            android:layout_toRightOf="@id/VI_number"
+            android:text="Visitor Name"
+            style="@style/Title3TextStyleBlack"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/VI_count"
+            android:textSize="24sp"
+            android:text="0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/VI_top"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/VI_beaconName"
+            android:text="Beacon Name"
+            style="@style/Title3TextStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/VI_time"
+            android:layout_below="@id/VI_beaconName"
+            android:text="15 September 2014 16:40"
+            style="@style/TextStyleGrey"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+</RelativeLayout>

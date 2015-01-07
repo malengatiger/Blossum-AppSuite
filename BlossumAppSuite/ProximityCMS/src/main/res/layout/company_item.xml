@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/BI_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/BI_txtNumber"
+            android:text="00"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/xblue_oval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/BI_txtName"
+            style="@style/Title3TextStyleBlack"
+            android:text="Company Name"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textStyle="normal"
+            android:layout_toRightOf="@id/BI_txtNumber"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/BI_lay2"
+        android:layout_below="@id/BI_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/BI_txtCount"
+            android:text="00"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/absa_red"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/BI_txtCountLabel"
+            android:text="Branches"
+            android:gravity="center"
+            android:textColor="@color/grey2"
+            android:textSize="14sp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/BI_txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

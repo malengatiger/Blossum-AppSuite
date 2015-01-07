@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="0dp" android:background="@color/grey"
+    tools:context="com.boha.proximity.cms.PictureActivity">
+
+    <RelativeLayout android:id="@+id/BAA_lay1"
+        android:padding="0dp" android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/xx"
+            android:id="@+id/BAA_image" android:alpha="0.2"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="16dp" android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Pick Content"
+            android:id="@+id/BAA_btnPick"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Take Picture"
+            android:id="@+id/BAA_btnTakePicture"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Save Content"
+            android:id="@+id/BAA_btnSave"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/BAA_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:padding="15dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

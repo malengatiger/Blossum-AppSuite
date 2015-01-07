@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/VI_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/VI_number"
+            android:text="00"
+            android:background="@drawable/xblue_oval"
+            android:gravity="center"
+            android:textColor="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/VI_beaconName"
+            android:layout_toRightOf="@id/VI_number"
+            android:text="Beacon Name"
+            style="@style/Title3TextStyleBlue"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/VI_time"
+            android:layout_below="@id/VI_beaconName"
+            android:layout_alignLeft="@id/VI_beaconName"
+            android:layout_marginTop="10dp"
+            android:text="15 September 2014 16:40"
+            style="@style/TextStyleGrey"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

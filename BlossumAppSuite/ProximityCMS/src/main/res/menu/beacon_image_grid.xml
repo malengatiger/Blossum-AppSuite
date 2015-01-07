@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.boha.proximity.cms.BeaconImageGridActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add Image"
+        android:icon="@drawable/ic_action_new"
+        android:orderInCategory="110"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="Remove All Images"
+        android:icon="@android:drawable/ic_delete"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

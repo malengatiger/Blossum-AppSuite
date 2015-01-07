@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/grey"
+    tools:context=".fragments.BranchFragment">
+
+    <RelativeLayout
+        android:id="@+id/FBC_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:text="Branch Name"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/FBC_txtBranch"
+            style="@style/Title2TextStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+        <TextView
+            android:text="00"
+            android:layout_alignParentRight="true"
+            android:id="@+id/FBC_txtCount"
+            android:textSize="24sp"
+            android:textColor="@color/blue_dark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        </RelativeLayout>
+
+    <ListView
+        android:id="@+id/FBC_list"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/FBC_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

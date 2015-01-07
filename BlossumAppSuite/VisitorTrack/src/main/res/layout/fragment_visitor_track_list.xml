@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/beige_pale"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/VL_top"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/VL_label"
+            android:text="Visitor Tracks"
+            style="@style/Title2TextStyleBlue"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/VL_count"
+            android:text="00"
+           style="@style/RedOval"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/VL_list"
+        android:layout_below="@id/VL_top"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

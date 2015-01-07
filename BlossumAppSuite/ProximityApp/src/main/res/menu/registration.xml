@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.boha.beacon.beaconsapp.RegistrationActivity" >
+    <item android:id="@+id/action_info"
+        android:title="@string/info"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:showAsAction="ifRoom" />
+</menu>

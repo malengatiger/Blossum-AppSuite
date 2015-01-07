@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BlossUm</string>
+    <string name="prox">BlossUm CMS</string>
+    <string name="action_help">Help</string>
+    <string name="action_add_branch">Add Branches</string>
+    <string name="action_refresh">Refresh Beacons</string>
+    <string name="action_range">Range Beacons</string>
+    <string name="title_activity_branch_list">Branch List</string>
+    <string name="title_activity_beacon_list">Beacon List</string>
+    <string name="title_activity_picture">PictureActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

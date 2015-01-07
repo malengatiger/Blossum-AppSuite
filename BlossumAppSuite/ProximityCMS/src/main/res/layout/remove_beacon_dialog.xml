@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/DEL_topLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/DEL_image"
+            android:src="@drawable/error32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/DEL_txtBeaconName"
+            android:text="Beacon Name"
+            android:layout_marginLeft="10dp"
+            style="@style/Title3TextStyleBlack"
+            android:layout_toRightOf="@id/DEL_image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/DEL_txtTitle"
+        android:text="Select the elements to be removed"
+        android:layout_below="@id/DEL_topLay"
+        style="@style/TextStyle"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/absa_red"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/DEL_checks"
+        android:layout_width="match_parent"
+        android:layout_below="@id/DEL_txtTitle"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/DEL_chkImages"
+            android:text="Delete all beacon images"
+            android:layout_width="wrap_content"
+            android:checked="false"
+            android:enabled="false"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/DEL_chkBeacon"
+            android:text="Remove the Beacon itself"
+            android:layout_below="@id/DEL_chkImages"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_below="@id/DEL_checks"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/DEL_btnCancel"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/DEL_btnRemove"
+            android:text="Remove Selected"
+            android:layout_weight="2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blossum</string>
+    <string name="hello_world">Welcome to Blossum!</string>
+    <string name="enter">Please enter your name and select the email account for the app.</string>
+    <string name="enter_first">Enter first name</string>
+    <string name="enter_last">Enter surname</string>
+    <string name="email_notfound">No email accounts found. Please create email account on your device</string>
+    <string name="send">Send Registration</string>
+    <string name="comms_error">Error communicating with the server. Please try again</string>
+    <string name="info">Information</string>
+    <string name="scan">Scan Beacons</string>
+    <string name="title_activity_registration">Registration</string>
+
+</resources>

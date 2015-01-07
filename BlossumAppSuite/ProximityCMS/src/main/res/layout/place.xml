@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/PLACE_title"
+        android:layout_width="wrap_content"
+        style="@style/Title2TextStyleBlack"
+        android:text="Company"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter Name"
+        android:id="@+id/PLACE_name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/PLACE_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter eMail Address"
+        android:id="@+id/PLACE_email"
+        android:layout_below="@id/PLACE_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter Cellphone Number"
+        android:id="@+id/PLACE_cell"
+        android:layout_below="@id/PLACE_email"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Save Data"
+        android:id="@+id/PLACE_btnSave"
+        android:layout_below="@id/PLACE_cell"
+        android:inputType="phone"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
